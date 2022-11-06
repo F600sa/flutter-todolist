@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
-  List tasks = ["dwd", "wdwdw", "dwdwdwdwd", "wdwdw", "wfwwfwf"];
+  List tasks = ["dwd", "wdwdw", "dwdwdwdwd", "wdwdw", "wfwwfwf", "sssss"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
