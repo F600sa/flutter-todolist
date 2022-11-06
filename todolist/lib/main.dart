@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
+
 import 'package:todolist/V/Screen/home.dart';
-=======
+
 import 'package:get/get.dart';
 
 import 'V/Screen/update.dart';
