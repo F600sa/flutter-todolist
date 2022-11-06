@@ -5,7 +5,7 @@ import '../V/Screen/home.dart';
 
 
 class ControllerTask extends GetxController {
-  var tasks = ["asd","asd"].obs;
+  final tasks = ["asd","asd"];
 
 
   // void addTask(item) {
@@ -15,9 +15,15 @@ class ControllerTask extends GetxController {
           tasks.add(value);
           }
 
-         deletTodo(index){
-            tasks.removeAt(index);
-          }
+        //  void deletTodo( index){
+        //   print("object");
+        //   tasks.removeAt(index) ;
+            
+            
+        //   }
+         void delTask(int index) {
+               tasks.removeAt(index);
+  }
           
   //          Future<void> removeTodo(ControllerTask index) async {
   //         await tasks.removeAt(tasks.length);

@@ -90,7 +90,8 @@ class HomePage extends StatelessWidget {
                               
                                 onPressed: () {
                                   print(controllerTask.tasks[index]);
-                                 controllerTask.deletTodo(controllerTask.tasks[index]);
+                                 controllerTask.delTask(index);
+                                //  controllerTask.tasks[index];
 
                                 }, icon: Icon(Icons.delete)))
                       ],

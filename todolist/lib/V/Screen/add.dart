@@ -21,6 +21,7 @@ class AddTast extends StatelessWidget {
     return 
       SafeArea(
         child: Scaffold(
+          
           body: Padding(
             padding: const EdgeInsets.all(40.0),
             child: Column(
