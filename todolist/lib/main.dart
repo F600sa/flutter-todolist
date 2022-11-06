@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:todolist/V/Screen/home.dart';
+=======
+import 'package:get/get.dart';
+
+import 'V/Screen/update.dart';
+>>>>>>> refs/remotes/origin/main
 
 void main() {
   runApp(const MyApp());
@@ -8,9 +14,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -29,3 +35,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+=======
+    return GetMaterialApp(home: Scaffold(body: UpdateScreen()),);
+  }
+}
+>>>>>>> refs/remotes/origin/main
