@@ -11,7 +11,7 @@ import 'add.dart';
 import 'home.dart';
 import 'home.dart';
 var controllerTask  =Get.put(ControllerTask());
-var item =TextEditingController();
+TextEditingController item =TextEditingController();
 
 class AddTast extends StatelessWidget {
   const AddTast({super.key});
@@ -32,18 +32,26 @@ class AddTast extends StatelessWidget {
                   labelText: 'Enter your Task',
                   
                 ),
+                onFieldSubmitted: ((value) {
+                  controllerTask.addTodo(value);
+                  print(value);
+                  Get.to(HomePage());
+                  item.clear();
+
+
+                }),
                 onTap: (){},
             
             ),
             Container(
               height: 400,
               child: FloatingActionButton(onPressed: (){
-                controllerTask.addTask(item);
+                // controllerTask.addTodo(value);
                  Get.to(()=>HomePage());
                   print(item.text); //
                   print(controllerTask.tasks.toList());
                   item.clear();
-              },child: Icon(Icons.add),))],),
+              },child: Icon(Icons.back_hand),))],),
           ),
         ),
       );
