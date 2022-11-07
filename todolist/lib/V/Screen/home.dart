@@ -21,8 +21,6 @@ class HomePage extends StatelessWidget {
           icon: Icon(Icons.add),
         ),
       ),
-      // title: Text("App par "),
-
       body: Column(
         children: [
           Expanded(
@@ -56,9 +54,10 @@ class HomePage extends StatelessWidget {
                                   onPressed: () {
                                     // print(controllerTask.tasks[index]);
                                     // controllerTask.tasks[index];
-                                    controllerTask.deletTask(index);
+
                                     Get.snackbar(
                                         'deleted', controllerTask.tasks[index]);
+                                    controllerTask.deletTask(index);
                                   },
                                   icon: Icon(Icons.delete)))
                         ],
