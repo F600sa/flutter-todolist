@@ -43,21 +43,29 @@ class HomePage extends StatelessWidget {
                                 child: Text('${controllerTask.tasks[index]}')),
                           ),
                           Container(
-                            alignment: Alignment.centerRight,
-                            child: IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.edit),
-                            ),
-                          ),
-                          Container(
+                              alignment: Alignment.centerRight,
                               child: IconButton(
+// <<<<<<< HEAD
+//                               onPressed: () {},
+//                               icon: Icon(Icons.edit),
+//                             ),
+//                           ),
+//                           Container(
+//                               child: IconButton(
+//                                   onPressed: () {
+//                                     // print(controllerTask.tasks[index]);
+//                                     // controllerTask.tasks[index];
+// =======
+
                                   onPressed: () {
-                                    // print(controllerTask.tasks[index]);
-                                    // controllerTask.tasks[index];
+                                    print(controllerTask.tasks[index]);
+
+                                    //  controllerTask.tasks[index];
 
                                     Get.snackbar(
                                         'deleted', controllerTask.tasks[index]);
-                                    controllerTask.deletTask(index);
+                                    controllerTask.delTask(index);
+                                    // controllerTask.delTask(index);
                                   },
                                   icon: Icon(Icons.delete)))
                         ],

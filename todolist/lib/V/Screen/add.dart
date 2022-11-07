@@ -31,7 +31,7 @@ class AddTast extends StatelessWidget {
                   labelText: 'Enter your Task and press "Enter"',
                 ),
                 onFieldSubmitted: ((value) {
-                  controllerTask.addTask(value);
+                  controllerTask.addTodo(value);
                   print(value);
                   Get.to(HomePage());
                   item.clear();
