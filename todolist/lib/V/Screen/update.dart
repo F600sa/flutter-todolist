@@ -11,29 +11,25 @@ class UpdateScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      
       child: Padding(
         padding: const EdgeInsets.all(40.0),
         child: Column(
-          children: 
-        [
-          
-          TextFormField(
-             decoration: const InputDecoration(
-              border: UnderlineInputBorder(),
-              labelText: 'Enter your update',
-              
+          children: [
+            TextFormField(
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Enter your update',
+              ),
+              onTap: () {},
             ),
-            onTap: (){
-            
-            },
-
+            Container(
+                height: 400,
+                child: FloatingActionButton(
+                  onPressed: () {},
+                  child: Icon(Icons.edit),
+                ))
+          ],
         ),
-        Container(
-          height: 400,
-          child: FloatingActionButton(onPressed: (){
-           
-          },child: Icon(Icons.edit),))],),
       ),
     );
   }
